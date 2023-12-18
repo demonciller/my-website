@@ -10,18 +10,19 @@
     <script src="https://kit.fontawesome.com/90d2b71466.js" crossorigin="anonymous"></script>
 </head>
 <body>
- <section class="header">
+ <section id="header">
    <div class="container">
         
     <nav>
                 <a href="#" class="logo">CILLER</a>
-            <ul class="sidemenu">
+            <ul id="sidemenu">
                 <li></li>
-                <li><a href="header">Home</a></li>
-                <li><a href="service">Service</a></li>
-                <li><a href="contact-2">Contact</a></li>
-                <li><a href="protfolio">Protofolio</a></li>
-                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#protfolio">portfolio</a></li>
+               <li><a href="#contact-2">Contact</a></li> 
+               <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
             </ul>
             <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
@@ -30,9 +31,10 @@
                 <p><span>Freshman</span><br>Web-developer</p>
                 
                 <h1>Hi, I'm <span>Ciller</span><br>From Egypt</h1>
+                
                 <div class="img-4">
-                    <img class="img-3" src="./graph.png" alt="">
-                    
+                    <img src="./graph.png" class="shape">
+                    <img src="./1697666122763 (1).png" class="man">
                 </div>
             </div>   
         </div>
@@ -41,7 +43,7 @@
 </section>
 <!-----------------about me--------------->
 <section>
-    <div class="about">
+    <div id="about">
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
@@ -79,7 +81,7 @@
 </section>
 
 <!-- ---------------------------------------------service------------------------- -->
-<div class="service">
+<div id="service">
     <div class="container">
         <h1 class="sub-title">My Service</h1>
         <div class="service-list">
@@ -108,7 +110,7 @@
 
 <!-- -----------------------portfolio---------------- -->
 
-<section class="protfolio">
+<section id="protfolio">
     
     <div class="portfolio">
         <div class="container">
@@ -169,7 +171,7 @@
 
 <!-- ------------------------contact-------------- -->
 
-<div class="contact-2">
+<div id="contact-2">
     <div class="container">
         <div class="row">
             <div class="contact-left">
@@ -200,13 +202,13 @@
 
 <script>
 
-var sidemenu = document.getElementsByClassName("sidemenu");
+var sidemeu = document.getElementById("sidemenu");
 
 function openmenu(){
-    sidemenu.style.right ="0";
+    sidemeu.style.right = "0";
 }
 function closemenu(){
-    sidemenu.style.right ="-200px";
+    sidemeu.style.right = "-200px";
 }
 
     

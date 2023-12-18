@@ -6,6 +6,10 @@
     
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background: #080808;
     color: #fff;
@@ -50,6 +54,7 @@ nav ul li a::after{
     left: 0;
     bottom: -6px;
     transition: 0.5s;
+    border-radius: 5px;
 
 }
 
@@ -100,24 +105,80 @@ nav ul .btnLogin-popup:hover{
     text-transform: uppercase;
 }
 
-.img-4{
-    width: 45%;
+/* .img-3{
+    width: 40%;
     height: 80%;
     position: absolute;
     bottom: 80px;
     right: 0px;
  }
 
- .img-4 img{
+ .img-3 img{
    left: 50%;
    bottom: 0;
    transition: bottom 1s, left 1s;
-   
-
+}
+.img-9{
+    width: 40%;
+    height: 80%;
+    position: absolute;
+    bottom: 80px;
+    right: 0px;
  }
+ .img-9 img{
+    left: 50%;
+    bottom: 0;
+    transition: bottom 1s, left 1s;
+ }
+
+ .img-4{
+    display: flex;
+ } */
+
+
+
+
+
+
+.img-4{
+    width: 40%;
+    height: 70%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.img-4 img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+    bottom: 200px;
+
+}
+
+.img-4 .me{
+    position: absolute;
+    margin-bottom: 50px
+}
+
+
+.img-4:hover .man{
+    left: 46%;
+}
+
+.img-4:hover .shape{
+    bottom: 80px;
+}
 /* ---------------------about------------------ */
 
-.about{
+#about{
+    margin-top: 60px;
     padding: 80px 0;
     color: #ababab;
 }
@@ -203,7 +264,7 @@ nav ul .btnLogin-popup:hover{
 
 /* --------------------servicee------------------- */
 
-.service{
+#service{
     padding: 30px 0;
 }
 
@@ -250,7 +311,7 @@ nav ul .btnLogin-popup:hover{
 /* -------------------portofolio------------------- */
 
 
-.portfolio{
+#portfolio{
     padding: 50px 0;
 }
 
@@ -428,6 +489,9 @@ nav .fa-solid{
         display: none;
     }
 
+    .img-4{
+        display: none;
+    }
 
     .header-text{
         font-size: 23px;
